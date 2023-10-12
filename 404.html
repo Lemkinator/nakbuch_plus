@@ -65,16 +65,64 @@
             object-fit: cover;
             object-position: 0 35%;
         }
+
+        .error button {
+            font-size: 1rem;
+            background: linear-gradient(to top, #085eff 0%, #99f6ff 100%);
+            padding: 14px 32px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            margin-right: 1rem;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.35s;
+            outline: none;
+        }
+
+        .error button a {
+            position: relative;
+            z-index: 2;
+            text-decoration: none;
+            background: transparent;
+            color: white;
+        }
+
+        .error button:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #2d81b6;
+            transition: all 0.35s;
+            border-radius: 4px;
+        }
+
+        .error button:hover {
+            transform: scale(1.075);
+            transition: 0.2s ease-in;
+            color: white;
+            cursor: pointer;
+        }
+
+        .error button:hover:after {
+            color: white;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
 <div class="error">
-    <h1 class="colored-h1">404</h1>
+    <h1>404</h1>
     <br>
     <img src="/images/error.gif" alt="">
     <br>
     <p lang="de">Völlig verloren,</p>
     <p lang="de">die Seite die du suchst, ist nicht verfügbar!</p>
+    <button><a href="/">Startseite</a></button>
+    <br><br><br><br>
 </div>
 </body>
 </html>
