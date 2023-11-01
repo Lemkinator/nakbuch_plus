@@ -2,7 +2,13 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/icons" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/images" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/images/android" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/images/other" type="java-resource" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
