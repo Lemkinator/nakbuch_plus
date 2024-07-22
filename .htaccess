@@ -1,6 +1,8 @@
-#redirect /download to https://example.com/download
+Options +FollowSymLinks
 
+#redirect download to https://example.com/download
 RewriteEngine on
+Redirect 307 /download https://example.com/download
 
-RewriteCond %{REQUEST_URI} ^/download$
-RewriteRule ^(.*)$ https://example.com/download [R=307,L]
+
+
