@@ -1,5 +1,7 @@
 Options +FollowSymLinks
 
+AllowOverride All
+
 #redirect download to https://example.com/download
 RewriteEngine on
 Redirect 307 /download https://example.com/download
