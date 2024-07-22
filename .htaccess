@@ -1,0 +1,6 @@
+#redirect /download to https://example.com/download
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} ^/download$
+RewriteRule ^(.*)$ https://example.com/download [R=307,L]
